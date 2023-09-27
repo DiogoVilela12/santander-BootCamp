@@ -1,0 +1,49 @@
+header {
+    display: static;
+    background: rgba(196, 196, 196, 0.11);
+    backdrop-filter: blur(20px);
+
+    position: fixed;
+    z-index: 1;
+
+    border-bottom: 1px solid black;
+    transition: .1s;
+
+    height: 2.5rem;
+    width: 100%;
+    top: 0;
+}
+
+.div__header {
+    padding: 0 2rem;
+    background-color: transparent;
+
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 2.5rem;
+    width: calc(100% - 4rem);
+}
+
+img {
+    width: 2rem;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #EC0000;
+}

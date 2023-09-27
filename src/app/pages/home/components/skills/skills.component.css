@@ -1,0 +1,5 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5vw 10vw;
+}
