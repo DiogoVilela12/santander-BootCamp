@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 10vw;
+    margin: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 25px;
+
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+img {
+    width: 1.3rem;
+    margin: .5rem;
+}
+
+p {
+    font-weight: bold;
+}

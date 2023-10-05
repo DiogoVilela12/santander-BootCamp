@@ -1,0 +1,68 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 0 0 75px 75px;
+}
+
+.pokeTypes {
+    display: flex;
+    justify-content: center;
+
+    margin: 1rem;
+}
+
+.header {
+    padding:1rem;
+    width: calc(100% - 2rem);
+}
+
+.header__arrow {
+    align-self: flex-start;
+}
+
+img {
+    width: 2rem;
+}
+
+.poke__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poke__info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.poke__info p {
+    font-size: .8rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke__img {
+    margin: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 100%;
+}
+
+.poke__img__pokemon {
+    width: 30vw;
+}

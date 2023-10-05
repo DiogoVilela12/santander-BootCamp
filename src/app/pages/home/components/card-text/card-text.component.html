@@ -1,4 +1,4 @@
-<div>
+<div [ngStyle]="{'flex-direction': reverse, 'background-color': bgColor}">
     <section class="texts">
         <h1>
             <ng-content select="h1"></ng-content>
@@ -11,5 +11,11 @@
         </p>
     </section>
 
-    <img [src]="urlImagem" alt="">
+    <a *ngIf="linkExterno == true" target="_blank" href="{{urlLink}}">
+        <img [src]="urlImagem" alt="">
+    </a>
+
+    <a *ngIf="linkExterno == false" [routerLink]="urlLink">
+        <img [src]="urlImagem" alt="">
+    </a>
 </div>

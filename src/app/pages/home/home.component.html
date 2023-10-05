@@ -1,5 +1,5 @@
 <app-header></app-header>
-<app-card-text id="sobre" [urlImagem]="'../assets/Logo Bootcamp.webp'">
+<app-card-text id="sobre" [linkExterno]="true" [urlLink]="'https://github.com/DiogoVilela12/santander-BootCamp'" [urlImagem]="'../assets/card-logos/Logo Bootcamp.webp'">
     <h1>Santander Bootcamp 2023</h1>
     <h2>Fullstack Java e Angular</h2>
     <p>O Santander Bootcamp 2023 é um programa de treinamento projetado para impulsionar as habilidades e o conhecimento de desenvolvedores. Neste bootcamp, os participantes terão a oportunidade de mergulhar profundamente no mundo do desenvolvimento Fullstack, explorando as tecnologias Java e Angular, dois pilares essenciais no cenário de desenvolvimento de software.</p>
@@ -23,8 +23,8 @@
 </app-skills>
 
 <app-skills>
-    <app-skill-box [urlImg]="'../assets/habilidades/spring.svg'" [BGColor]="'#dbf7db'">
-        <h2>Spring Boot</h2>
+    <app-skill-box [urlImg]="'../assets/habilidades/git.svg'" [BGColor]="'#f9a195'">
+        <h2>Git</h2>
     </app-skill-box>
     <app-skill-box [urlImg]="'../assets/habilidades/angular.svg'" [BGColor]="'#ffb2b5'">
         <h2>Angular</h2>
@@ -37,8 +37,20 @@
     </app-skill-box>
 </app-skills>
 
-<app-card-text id="sobre" [urlImagem]="'../assets/Logo Bootcamp.webp'">
-    <h1>Santander Bootcamp 2023</h1>
-    <h2>Fullstack Java e Angular</h2>
-    <p>O Santander Bootcamp 2023 é um programa de treinamento projetado para impulsionar as habilidades e o conhecimento de desenvolvedores. Neste bootcamp, os participantes terão a oportunidade de mergulhar profundamente no mundo do desenvolvimento Fullstack, explorando as tecnologias Java e Angular, dois pilares essenciais no cenário de desenvolvimento de software.</p>
+<app-card-text  id="sobre" [linkExterno]="true" [reverse]="'row-reverse'" [urlLink]="'https://github.com/DiogoVilela12/Contribuindo-em-um-Projeto-Open-Source-no-GitHub'" [urlImagem]="'../assets/card-logos/Github.webp'">
+    <h1>Contribuindo em um Projeto</h1>
+    <h2> Open Source no GitHub</h2>
+    <p>Ao contribuir, os desenvolvedores têm a oportunidade de colaborar com uma comunidade, compartilhar suas habilidades e conhecimentos, e ajudar a melhorar o projeto por meio de correções de bugs, implementação de recursos e aprimoramentos.</p>
+</app-card-text>
+
+<app-card-text  id="sobre" [bgColor]="'#fff'" [urlLink]="'/poke'" [urlImagem]="'../assets/card-logos/ng.webp'">
+    <h1>Construindo uma Pokédex </h1>
+    <h2>com TypeScript e Angular</h2>
+    <p>Neste projeto, o desenvolvedor ira aplicar as ferramentas TypeScript e Angular para construir uma aplicação que permite explorar informações sobre Pokémon, como suas características, tipos e imagens.</p>
+</app-card-text>
+
+<app-card-text  id="sobre" [linkExterno]="true" [reverse]="'row-reverse'" [urlLink]="'/blog'" [urlImagem]="'../assets/card-logos/Blog.webp'">
+    <h1>Criando um Blog</h1>
+    <h2>com Angular</h2>
+    <p>Os desenvolvedores aprenderão a configurar o ambiente de desenvolvimento Angular, criar componentes para gerenciar postagens, implementar recursos como comentários e categorias, e integrar APIs ou serviços para armazenar e recuperar dados do blog.</p>
 </app-card-text>

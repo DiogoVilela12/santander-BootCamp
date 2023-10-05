@@ -1,0 +1,34 @@
+<section>
+    <a [routerLink]="'/'">
+        <img class="logo" src="../../../../assets/pokedex/pokedexLogo.svg" alt="">
+    </a>
+
+    <div class="bar__search">
+        <input [value]="placeHolder" (input)="placeHolder = $any($event.target).value" class="inputBox" placeholder="Pesquisar Pokemon" type="text">
+        <button (click)="navigateToPokemon(placeHolder)">
+            <img class="lupa" src="../../../../assets/pokedex/magnifying-glass-9-svgrepo-com.svg" alt="">
+        </button>
+    </div>
+
+</section>
+<section>
+    <div>
+        <app-poke-card></app-poke-card>
+        <app-poke-card></app-poke-card>
+        <app-poke-card></app-poke-card>
+    </div>
+    <div>
+        <app-poke-card></app-poke-card>
+        <app-poke-card></app-poke-card>
+        <app-poke-card></app-poke-card>
+    </div>
+    <div>
+        <app-poke-card></app-poke-card>
+        <app-poke-card></app-poke-card>
+        <app-poke-card></app-poke-card>
+    </div>
+</section>
+
+<div class="see__more">
+    <button class="button-19" role="button">Ver Mais</button>
+</div>

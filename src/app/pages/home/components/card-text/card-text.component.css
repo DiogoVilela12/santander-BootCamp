@@ -1,21 +1,19 @@
 div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70vh;
     padding: 0 10vw;
     background-color: #e0fcff;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.28;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 32px;
 }
@@ -26,6 +24,15 @@ p {
 
 img {
     width: 25vw;
+}
+
+img:hover {
+    transition: 1.5s;
+    width: 27.5vw;
+}
+
+img:not(:hover) {
+    transition: 1s;
 }
 
 .texts {

@@ -1,0 +1,13 @@
+<a [ngStyle]="{'background-Color': mainColor[0]}"  [routerLink]="route">
+    <div class="card__image">
+        <img src="{{img}}" alt="">
+    </div>
+    <div class="card__info">
+        <p>#{{order}}</p>
+        <h2>{{name}}</h2>
+    </div>
+    <div class="card__types">
+        <app-poke-type [bgColor]="mainColor[0]" [type]="types[0]"></app-poke-type>
+        <app-poke-type [bgColor]="mainColor[1]" [type]="types[1]"></app-poke-type>
+    </div>
+</a>

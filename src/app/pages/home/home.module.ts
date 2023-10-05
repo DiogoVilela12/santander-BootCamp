@@ -6,6 +6,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { HomeComponent } from './home.component'
 import { CardTextComponent } from '../home/components/card-text/card-text.component'
 import { HeaderComponent } from './components/header/header.component'
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HeaderComponent } from './components/header/header.component'
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
 })
 export class HomeModule { }
