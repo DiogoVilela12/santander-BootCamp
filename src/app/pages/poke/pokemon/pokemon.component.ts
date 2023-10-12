@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { PokeAPIService } from 'src/app/service/pokemonAPI/poke-api.service';
 
 @Component({
@@ -7,16 +7,25 @@ import { PokeAPIService } from 'src/app/service/pokemonAPI/poke-api.service';
   templateUrl: './pokemon.component.html',
   styleUrls: ['./pokemon.component.css']
 })
+
 export class PokemonComponent implements OnInit {
   param: string = '';
-  order:string | undefined;
-  img: string | undefined;
+
+  order: string | undefined;
   name: string | undefined;
+  img: string | undefined;
+
+  xpBase: number | undefined;
+  height: number | undefined;
+  weight: number | undefined;
+
+  abilitys: string[] = [];
   mainColor: string[] = [];
   types: string[] = [];
+  moves: string[] = [];
 
   constructor(private pokeAPI: PokeAPIService,
-    private parametrizador: ActivatedRoute) {    
+    private parametrizador: ActivatedRoute) {
   }
 
   ngOnInit() {
@@ -28,16 +37,25 @@ export class PokemonComponent implements OnInit {
       next: (res) => {
         this.order = this.param.padStart(4, '0');
         this.name = res.name
+        this.height = res.height
+        this.weight = res.weight
         this.img = res.sprites.other['official-artwork'].front_default
-        this.types.push(this.pokeAPI.getPokemonTypeInPortuguese(res.types[0].type.name))
-        this.mainColor.push(this.pokeAPI.getPokemonTypeColor(res.types[0].type.name))
+        this.xpBase = res.base_experience
 
-        if (res.types.length > 1) {
-          this.types.push(this.pokeAPI.getPokemonTypeInPortuguese(res.types[1].type.name))
-          this.mainColor.push(this.pokeAPI.getPokemonTypeColor(res.types[1].type.name))
+        for (let index = 0; index < res.moves.length; index++) {
+          this.moves.push(res.moves[index].move.name)
         }
 
+        for (let index = 0; index < res.abilities.length; index++) {
+          this.abilitys.push(res.abilities[index].ability.name)
+        }
+
+        for (let index = 0; index < res.types.length; index++) {
+          this.types.push(this.pokeAPI.getPokemonTypeInPortuguese(res.types[index].type.name))
+          this.mainColor.push(this.pokeAPI.getPokemonTypeColor(res.types[index].type.name))
+        }
       },
+
       error: (err) => {
         console.log(err)
       }

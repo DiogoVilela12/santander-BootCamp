@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { PokeModule } from './pages/poke/poke.module';
 import { HttpClientModule } from '@angular/common/http';
+import { BlogModule } from './pages/blog/blog.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     PokeModule,
     HomeModule,
+    BlogModule,
     HttpClientModule
   ],
   providers: [],

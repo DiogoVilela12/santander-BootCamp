@@ -1,0 +1,37 @@
+.bigCard {
+    background-color: #0F1923;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 80vh;
+}
+
+.bigCard__content {
+    color: #ECE8E1;
+
+    width: calc(50% - 10vw);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 10vw;
+}
+
+.bigCard__content__title {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.bigCard__content__desc {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-transform: uppercase;
+}

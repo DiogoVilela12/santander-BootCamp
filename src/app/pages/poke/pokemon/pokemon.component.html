@@ -4,27 +4,70 @@
             <img src="../../../../assets/pokedex/left-arrow-svgrepo-com.svg" alt="Voltar Pagina">
         </a>
     </div>
-    
-            <div class="poke__info">
-                <h2>{{name}}</h2>
-                <p>#{{order}}</p>
-            </div>
+
+    <div class="poke__info">
+        <h2>{{name}}</h2>
+        <p>#{{order}}</p>
+    </div>
 
 
     <div class="poke__img">
         <img class="poke__img__pokemon" src="{{img}}" alt="">
     </div>
 </section>
+
 <body>
     <div class="pokeTypes">
         <app-poke-type [bgColor]="mainColor[0]" [type]="types[0]"></app-poke-type>
         <app-poke-type [bgColor]="mainColor[1]" [type]="types[1]"></app-poke-type>
     </div>
 
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <section [ngStyle]="{'background-color': mainColor[0]}" class="datas">
+        <div class="datas__about">
+            <h2 class="datas__about__title">Sobre</h2>
+
+            <div class="datas__about__div">
+                <p class="datas__about__text">Altura: </p>
+                <p>{{height}} m</p>
+            </div>
+
+            <div class="datas__about__div">
+                <p class="datas__about__text">Peso: </p>
+                <p>{{weight}} Kg</p>
+            </div>
+
+            <div class="datas__about__div__habilidades">
+                <p class="datas__about__text">Habilidades: </p>
+
+                <ul class="datas__about__div__habilidades__lista">
+                    <li class="datas__about__div__habilidades__lista__item"
+                        *ngFor="let skill of abilitys | slice:0:3; index as i;">
+                        {{skill}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="datas__about">
+            <h2 class="datas__about__title">Status</h2>
+
+            <div class="datas__about__div">
+                <p class="datas__about__text">Experiencia: </p>
+                <p>{{xpBase}} xp</p>
+            </div>
+
+            <div class="datas__about__div">
+                <p class="datas__about__text">Numero: </p>
+                <p>{{order}}</p>
+            </div>
+        </div>
+
+        <div class="datas__about">
+            <h2 class="datas__about__title">Moves</h2>
+
+            <div class="datas__about__div__moves">
+                <p class="datas__about__div__moves__move" *ngFor="let move of moves | slice:0:7; index as i;">{{move}}</p>
+            </div>
+        </div>
     </section>
 </body>

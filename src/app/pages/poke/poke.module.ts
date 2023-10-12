@@ -7,13 +7,15 @@ import { PokeTypeComponent } from './components/poke-type/poke-type.component';
 import { PokeCardComponent } from './components/poke-card/poke-card.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { MorePokeComponent } from './components/more-poke/more-poke.component';
 
 @NgModule({
   declarations: [
     PokeHomeComponent,
     PokemonComponent,
     PokeTypeComponent,
-    PokeCardComponent
+    PokeCardComponent,
+    MorePokeComponent
   ],
   imports: [
     BrowserModule,

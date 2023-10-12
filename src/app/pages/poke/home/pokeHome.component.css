@@ -4,7 +4,7 @@ div {
 }
 
 section {
-    padding: 3rem;
+    padding: 3rem 3rem 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +61,6 @@ button:hover {
     background-color: #DD1234;
 
     display: flex;
-    padding-bottom: 1rem;
 }
 
 .visible {
@@ -98,6 +97,7 @@ button:hover {
   vertical-align: middle;
   white-space: nowrap;
   width: 30%;
+  margin: 1rem;
 }
 
 .button-19:after {

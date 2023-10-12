@@ -84,4 +84,6 @@ export class PokeAPIService {
   getPokemonTypeInPortuguese(type:string):string {
     return this.tiposDeElementosPokemon[this.pokemonTypes.indexOf(type)]
   }
+
+  
 }
