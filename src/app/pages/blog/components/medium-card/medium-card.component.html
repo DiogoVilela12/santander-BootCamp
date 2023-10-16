@@ -1,0 +1,11 @@
+<section>
+    <div class="imagem">
+        <img [ngStyle]="{'background': background}" src="{{img}}" alt="Imagem Agente em Destaque">
+    </div>
+    <div class="conteudo">
+        <h2>{{name}}</h2>
+        <p>{{desc}}</p>
+
+        <a *ngIf="button > 0" href="blog/{{index}}"> Ver Mais </a>
+    </div>
+</section>

@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-blog.component.css']
 })
 export class HomeBlogComponent {
-
+  ngOnInit() {
+    scrollTo(0, 0)
+  }
 }
