@@ -10,9 +10,19 @@ Na página inicial do projeto você tera a chance de conhecer a respeito dos pro
 
 * ### Construção de uma Pokedex com TypeScript e Angular
   * Neste projeto, fiz a aplicação das ferramentas TypeScript e Angular para construir uma página que permite explorar informações sobre Pokémon, como suas características, tipos e imagens utilizando o consumo de uma API aberta.
+  * ## Recursos
+    - Listagem de todos os Pokémon.
+    - Detalhes de cada Pokémon, incluindo tipo, habilidades e imagem.
+    - Pesquisa por nome de Pokémon.
+    - Filtragem por tipo de Pokémon.
 
 * ### Criação de um Blog de notícias com Angular
-  * Criar componentes para gerenciar noticias, implementar recursos, e integrar APIs ou serviços de coleta dados para o blog. Essas foram as principais características trabalhadas neste desafio de projeto.
+  * Este é um projeto para criar um Blog usando Angular. O objetivo deste projeto é aprofundar o conhecimento em Angular e práticas de consumo de APIs externas.
+
+  * ## Recursos
+    - Consumo de uma API Aberta.
+    - Detalhes de cada Agente, incluindo Nome, Descrição e imagem.
+
 ---
 ## Angular Version
 Este projeto foi gerado no [Angular CLI](https://github.com/angular/angular-cli) versão 16.2.3.
