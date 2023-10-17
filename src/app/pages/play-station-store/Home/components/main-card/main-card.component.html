@@ -1,0 +1,15 @@
+<section>
+    <div [ngStyle]="{'background': color}">
+        <img class="banner" src="{{banner}}" alt="Banner do Jogo em Destaque">
+        <img class="imagem" src="{{imagem}}" alt="Imagem do Jogo em Destaque">
+    </div>
+    <div class="content">
+        <h2 class="content__title">
+            <ng-content></ng-content>
+        </h2>
+        <a class="content__button ">Pré-Reserve Agora</a>
+    </div>
+    <p class="complemento">
+        Sejam Melhores. Juntos
+    </p>
+</section>

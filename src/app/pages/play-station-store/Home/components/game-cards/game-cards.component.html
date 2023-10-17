@@ -1,0 +1,9 @@
+<section>
+    <h2 class="title">
+        <ng-content></ng-content>
+    </h2>
+    <div>
+        <img *ngFor="let img of listaDeImagens; index as i;" src="{{img}}" alt="">
+    </div>
+    <a>Mostrar Mais</a>
+</section>

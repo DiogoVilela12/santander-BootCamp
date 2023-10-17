@@ -7,6 +7,7 @@ import { HomeModule } from './pages/home/home.module';
 import { PokeModule } from './pages/poke/poke.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogModule } from './pages/blog/blog.module';
+import { PlayStationStoreModule } from './pages/play-station-store/play-station-store.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BlogModule } from './pages/blog/blog.module';
     PokeModule,
     HomeModule,
     BlogModule,
+    PlayStationStoreModule,
     HttpClientModule
   ],
   providers: [],
