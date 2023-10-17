@@ -23,6 +23,13 @@ Na página inicial do projeto você tera a chance de conhecer a respeito dos pro
     - Consumo de uma API Aberta.
     - Detalhes de cada Agente, incluindo Nome, Descrição e imagem.
 
+* ### Recriando a Interface da PlayStation Store com Angular
+  * Este é um projeto desenvolvido como parte do desafio de projeto "Recriando a Interface da PlayStation Store com Angular" do Santander. O objetivo deste projeto é recriar a interface da PlayStation Store usando Angular.
+  * ## Recursos
+    - Interface semelhante à PlayStation Store.
+    - Exibição de produtos e detalhes de jogos.
+    - Navegação entre diferentes seções da loja.
+
 ---
 ## Angular Version
 Este projeto foi gerado no [Angular CLI](https://github.com/angular/angular-cli) versão 16.2.3.
