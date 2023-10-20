@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { ValorantAPIService } from 'src/app/service/valorantAPI/valorant-api.service';
 
 @Component({
@@ -7,13 +8,13 @@ import { ValorantAPIService } from 'src/app/service/valorantAPI/valorant-api.ser
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent {
-  @Input() index: number = 0;
+  @Input() index: any = 0;
 
   name: string = '';
   desc: string = '';
   img: string = '';
 
-  constructor(private valorantAPI: ValorantAPIService) { }
+  constructor(private valorantAPI: ValorantAPIService, private Route: Router) { }
 
   ngOnInit() {
     this.valorantAPI.getValorantData().subscribe({

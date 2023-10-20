@@ -1,12 +1,12 @@
 <section>
     <a [routerLink]="'/'">
-        <img class="logo" src="../../../../assets/pokedex/pokedexLogo.svg" alt="">
+        <img class="logo" src="assets/pokedex/pokedexLogo.svg" alt="">
     </a>
 
     <div class="bar__search">
         <input [value]="placeHolder" (input)="placeHolder = $any($event.target).value" class="inputBox" placeholder="Pesquisar Pokemon" type="text">
         <button (click)="navigateToPokemon(placeHolder)">
-            <img class="lupa" src="../../../../assets/pokedex/magnifying-glass-9-svgrepo-com.svg" alt="">
+            <img class="lupa" src="assets/pokedex/magnifying-glass-9-svgrepo-com.svg" alt="">
         </button>
     </div>
 
