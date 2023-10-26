@@ -5,6 +5,7 @@ div {
     height: 70vh;
     padding: 0 10vw;
     background-color: #e0fcff;
+    width: calc(100% - 18vw);
 }
 
 h1 {
@@ -38,4 +39,42 @@ img:not(:hover) {
 .texts {
     line-height: 1.43;
     width: 40vw;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: .2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: justify;
+        font-size: .7rem;
+    }
+
+    img {
+        width: 40vh;
+    }
+
+    img:hover {
+        transition: 1.5s;
+        width: 42.5vh;
+    }
+
+    .texts {
+        text-align: center;
+        width: 100%;
+    }
+
+    div {
+        flex-direction: column-reverse;
+        height: 100vh;
+        padding-top: 5vh;
+    }
+
 }

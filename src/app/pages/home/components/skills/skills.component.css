@@ -3,3 +3,13 @@ section {
     justify-content: space-between;
     margin: 2.5vw 10vw;
 }
+
+@media (max-width: 768px) {
+    section {
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}

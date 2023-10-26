@@ -47,3 +47,23 @@ a {
 a:hover {
     color: #EC0000;
 }
+
+@media (max-width: 768px) {
+    .div__header {
+        width: 100%;
+        padding: 0;
+    }
+    
+    div {
+        width: 80vw;
+        justify-content: space-around;
+    }
+
+    img {
+        margin-left: .8rem;
+    }
+
+    a {
+        font-size: .8rem;
+    }
+}

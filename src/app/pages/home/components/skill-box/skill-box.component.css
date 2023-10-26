@@ -30,3 +30,15 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     margin: 2px;
 }
+
+@media (max-width: 768px) {
+    section {
+        width: 50vw;
+        height: 8vh;
+    }
+
+    img {
+        padding: 1.5vh;
+        width: 20%;
+    }
+}
