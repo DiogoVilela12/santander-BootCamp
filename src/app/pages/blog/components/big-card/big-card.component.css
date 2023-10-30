@@ -41,6 +41,8 @@
 
     .bigCard__content {
         width: 80%;
-
+    }
+    .bigCard__content__title {
+        font-size: 2rem;
     }
 }

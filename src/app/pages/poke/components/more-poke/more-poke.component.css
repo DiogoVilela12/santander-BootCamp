@@ -65,3 +65,7 @@ div {
   .button-19:disabled {
     cursor: auto;
   }
+
+  div {
+    flex-wrap: wrap;
+  }

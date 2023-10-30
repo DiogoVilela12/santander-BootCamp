@@ -47,3 +47,13 @@ a {
     text-decoration: none;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .header {
+        width: 95vw;
+    }
+
+    a {
+        font-size: .6rem;
+    }
+}

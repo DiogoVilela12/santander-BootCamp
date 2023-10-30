@@ -21,3 +21,15 @@ img {
 p {
     font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+    div {
+        width: 30vw;
+        margin: .8rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+}

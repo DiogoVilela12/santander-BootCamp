@@ -60,3 +60,11 @@ h2 {
     justify-content: center;
     width: 100%;
 }
+
+
+@media (max-width: 768px) {
+    a {
+        width: 75vw;
+    }
+
+}

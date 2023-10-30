@@ -147,3 +147,14 @@ body {
 .datas__about__text {
     font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+    .datas {
+        flex-direction: column;
+        height: 150vh;
+    }
+    .datas__about {
+        width: 30vw;
+    }
+}

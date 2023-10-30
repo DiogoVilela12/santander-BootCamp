@@ -1,7 +1,6 @@
 import { Component, ViewContainerRef } from '@angular/core';
 import { Router } from '@angular/router';
 import { MorePokeComponent } from '../components/more-poke/more-poke.component';
-import { PokeCardComponent } from '../components/poke-card/poke-card.component';
 
 @Component({
   selector: 'app-poke',

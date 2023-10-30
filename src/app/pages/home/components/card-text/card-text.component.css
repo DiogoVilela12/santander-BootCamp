@@ -5,7 +5,7 @@ div {
     height: 70vh;
     padding: 0 10vw;
     background-color: #e0fcff;
-    width: calc(100% - 18vw);
+    width: calc(100% - 20vw);
 }
 
 h1 {
@@ -75,6 +75,7 @@ img:not(:hover) {
         flex-direction: column-reverse;
         height: 100vh;
         padding-top: 5vh;
+
     }
 
 }

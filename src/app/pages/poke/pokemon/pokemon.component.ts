@@ -29,6 +29,7 @@ export class PokemonComponent implements OnInit {
   }
 
   ngOnInit() {
+    scrollTo(0, 0)
     this.parametrizador.params.subscribe(
       res => this.param = res['id']
     )
